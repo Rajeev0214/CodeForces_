@@ -2,9 +2,9 @@
 using namespace std;
 
 int main(){
-    long n, m, a;
+    long long n, m, a;
     cin >> n >> m >> a;
-    int ans = ceil((float)n/a) * ceil((float)m/a);
+    long long ans = ((m+a-1)/a) * ((n+a-1)/a);
     cout << ans << endl;
     return 0;
 }
